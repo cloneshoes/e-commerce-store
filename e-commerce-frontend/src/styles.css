@@ -1,0 +1,133 @@
+/* General Reset and Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+}
+
+/* Image Styling */
+.image-container {
+  max-width: 150px;
+  max-height: 150px;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* Button Styling */
+.btn-prime, .btn-primary, .button, .gtc-btn {
+  padding: 12px 20px; /* Consistent padding */
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover{
+  background-color: green;
+  color: white;
+}
+
+/* Primary Button Styling */
+.btn-prime {
+  background-color: #007BFF;
+  color: white;
+  float: right;
+}
+
+.btn-prime:hover {
+  background-color: #0056b3;
+  transform: scale(1.05); /* Slight scale on hover */
+}
+
+.btn-primary {
+  background-color: #28a745;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #218838;
+  transform: scale(1.05); /* Slight scale on hover */
+}
+
+/* Secondary and Cart Button Styling */
+.gtc-btn {
+  background-color: #007BFF;
+  color: white;
+}
+
+.gtc-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05); /* Slight scale on hover */
+}
+
+/* Layout and Product Container */
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.product-image {
+  /* width: 100%; */
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Product Card Styling */
+.product-card {
+  width: 220px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  cursor: pointer;
+}
+
+.product-card:hover {
+  transform: translateY(-5px); /* Lift effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+}
+
+/* Cart Button Styles */
+.gtc-btn {
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+/* General Button Styles */
+button {
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Search bar */
+input[type="text"] {
+  padding: 10px;
+  width: 100%;
+  float: right;
+  max-width: 300px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+/* Responsive Grid */
+@media (max-width: 768px) {
+  .product-container {
+      flex-direction: column;
+      align-items: center;
+  }
+}
